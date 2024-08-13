@@ -15,4 +15,6 @@ class data_file extends Model
         'video',
         'audio',
     ];
+
+    protected $primaryKey = 'id_select';
 }
