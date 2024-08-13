@@ -12,10 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('data_texts', function (Blueprint $table) {
-            $table->bigIncrements('id_text')->primary();
+            $table->bigIncrements('id_text')->unsigned();;
             $table->string('Judul')->nullable();
             $table->text('deskripsi')->nullable();
             $table->timestamps();
+
+            $table->primary('id_text');
         });
     }
 

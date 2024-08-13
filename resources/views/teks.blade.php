@@ -51,10 +51,8 @@
                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
                                 <th scope="col" class="px-3 py-2">Judul</th>
-                                <th scope="col" class="px-3 py-2">Deskripsi</th>
-                                <th scope="col" class="px-3 py-2">
-                                    <span class="sr-only">Actions</span>
-                                </th>
+                                <th scope="col" class="px-3 py-2 text-center">Deskripsi</th>
+                                <th scope="col" class="px-3 py-2 text-right">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -202,7 +200,7 @@
                                 </div>
                             @empty
                                 <tr class="border-b dark:border-gray-700">
-                                    <td rowspan="2" class="px-3 py-2 text-center">Data belum ditemukan</td>
+                                    <td rowspan="3" class="px-3 py-2 text-center">Data belum ditemukan</td>
                                 </tr>
                             @endforelse
                         </tbody>
@@ -264,7 +262,5 @@
             </div>
         </div>
     </div>
-
-
 
 </x-layout>

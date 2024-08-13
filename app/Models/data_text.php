@@ -15,4 +15,9 @@ class data_text extends Model
     ];
 
     protected $primaryKey = 'id_text';
+
+    public function select()
+    {
+        return $this->hasMany(data_select::class);;
+    }
 }

@@ -12,8 +12,14 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('data_selects', function (Blueprint $table) {
-            $table->bigIncrements('id_select')->primary();
+            $table->bigIncrements('id_select')->primary()->unsigned();
             $table->enum('kategori', ['ya', 'tidak']);
+            $table->unsignedBigInteger('data_teks')->nullable();
+
+            $table->index('data_teks');
+            $table->foreign('data_teks')->references('id_text')->on('data_texts')
+                ->onDelete('set null')
+                ->onUpdate('set null');
             $table->timestamps();
         });
     }
