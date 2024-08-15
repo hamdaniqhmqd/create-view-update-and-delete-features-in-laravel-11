@@ -3,6 +3,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <div class="dash-content">
         <div class="overview">
@@ -87,8 +88,6 @@
                                                     data-modal-target="{{ $data->id_text }}delete"
                                                     data-modal-toggle="{{ $data->id_text }}delete" type="button"
                                                     class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete</button>
-                                                </li>
-                                                <a href="#" {{-- class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete</a> --}} </div>
                                             </div>
                                     </td>
                                 </tr>

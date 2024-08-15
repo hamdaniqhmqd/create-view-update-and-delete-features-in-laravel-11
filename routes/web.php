@@ -18,6 +18,9 @@ Route::put('/teks/update/{id_text}', [DataTextController::class, 'update'])->nam
 Route::delete('/teks/delete/{id_text}', [DataTextController::class, 'delete'])->name('teks.delete');
 
 Route::get('/file', [DataFileController::class, 'index'])->name('file');
+Route::post('/file/store', [DataFileController::class, 'store'])->name('file.store');
+Route::put('/file/update/{id_file}', [DataFileController::class, 'update'])->name('file.update');
+Route::delete('/file/delete/{id_file}', [DataFileController::class, 'delete'])->name('file.delete');
 
 Route::get('/select', [DataSelectController::class, 'index'])->name('select');
 Route::post('/select/store', [DataSelectController::class, 'store'])->name('select.store');

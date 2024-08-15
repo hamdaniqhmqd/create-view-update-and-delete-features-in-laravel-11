@@ -16,5 +16,5 @@ class data_file extends Model
         'audio',
     ];
 
-    protected $primaryKey = 'id_select';
+    protected $primaryKey = 'id_file';
 }
