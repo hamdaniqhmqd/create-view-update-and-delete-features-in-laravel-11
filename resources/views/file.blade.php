@@ -450,6 +450,7 @@
                                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50">
                                 </div>
                                 <div>
+                                    {{-- untuk format file pengguna bisa memilih sesuai dengan keinginan, tapi saya saran menggunakan format pdf yang sudah di support oleh browser untuk ditampilkan di tag iframe --}}
                                     <label for=""
                                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">File</label>
                                     <div id="previewContainer" class="hidden  mb-2">
@@ -459,7 +460,6 @@
                                     <input type="file" id="fileInput" name="file"
                                         class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer focus:outline-none"
                                         accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.odt,.ods,.odp,.txt,.rtf,.csv,.html,.xml,.epub,.mobi" />
-
                                 </div>
                                 <div>
                                     <label for=""

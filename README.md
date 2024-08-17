@@ -1,6 +1,6 @@
-# Fitur Otentikasi di Laravel 11
+# Fitur CRUD di Laravel 11
 
-Ini adalah contoh proyek Laravel 11 yang mencakup fitur otentikasi. Proyek ini juga menunjukkan cara menggunakan seeder data untuk mengisi basis data dengan data awal.
+Ini adalah contoh proyek Laravel 11 yang mencakup fitur CRUD (Create Read Update Delete). Proyek ini juga menunjukkan cara mengeola data mulai dari menambahkan, menampilkan, mengubah, dan menghapus data pada FrameWork Laravel. Pada tampilan menggunakan CSS native dan Tailwind css yang berintegrasi dengan Flowbite, Dengan itu pengguna bisa mengubah tampilan dengan leluasa.
 
 ## Fitur
 
@@ -16,6 +16,8 @@ Ini adalah contoh proyek Laravel 11 yang mencakup fitur otentikasi. Proyek ini j
 -   Sudah terdapat relasi antar Tabel
 -   Mampu buat dan ubah data gambar, video, file, dan audio
 -   Tampilan Dashboard
+-   Tampilan Modal yang menarik karena terdapat fitur preview.
+-   Terdapat pop up pada saat delete data
 
 ## Instalasi
 
@@ -77,6 +79,14 @@ Ini adalah contoh proyek Laravel 11 yang mencakup fitur otentikasi. Proyek ini j
     php artisan serve
     ```
 
+8. Melakukan perintah symlink.
+
+    ```bash
+    php artisan storage:link
+    ```
+
+9. Pengguna bisa menambahkan data sesuai dengan keinginan
+
 ## Penggunaan
 
 ### Tampilan Dashboard
@@ -95,3 +105,48 @@ Terdapat pilihan route, antara lain
     -   file audio
     -   file video
 -   `/select` untuk mengarah ke tampilan yang digunakan untuk mengelola data select, yang dimana tabel select dan tabel teks saling memiliki relasi
+
+### Format data pada table file.
+
+Sebelum itu, saran saya menggunakan menggunaka ukuran file kecil supaya lebih cepat dalam proses kirim dan menampilkan data
+Ada beberapa jenis data yang berbeda pada tabel file, antara lain:
+
+#### Format file
+
+pengguna bisa memilih sesuai dengan keinginan, tapi saya saran menggunakan format pdf yang sudah di support oleh browser untuk ditampilkan di tag iframe. Format yang bisa digunakan seperti
+
+```bash
+accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.odt,.ods,.odp,.txt,.rtf,.csv,.html,.xml,.epub,.mobi"
+```
+
+dan mungkin ada banyak lagi
+
+#### Format Audio
+
+pengguna bisa memilih sesuai dengan keinginan, tapi saya saran menggunakan format `.mp3` yang sudah di support oleh browser untuk ditampilkan di tag iframe. Format yang bisa digunakan seperti
+
+```bash
+accept=".mp3, .wav, .ogg, .aac, .flac, .m4a, .webm, .aiff"
+```
+
+dan mungkin ada banyak lagi.
+
+#### Format Video
+
+pengguna bisa memilih sesuai dengan keinginan, tapi saya saran menggunakan format `.mp4` yang sudah di support oleh browser untuk ditampilkan di tag iframe. Format yang bisa digunakan seperti
+
+```bash
+accept=".mp4, .webm, .ogg, .avi, .mkv, .mov"
+```
+
+dan mungkin ada banyak lagi.
+
+#### Format Gambar
+
+pengguna bisa memilih sesuai dengan keinginan. Format yang bisa digunakan seperti
+
+```bash
+accept=".jpg, .jpeg, .png, .gif, .svg"
+```
+
+dan mungkin ada banyak lagi.
